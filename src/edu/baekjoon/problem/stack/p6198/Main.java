@@ -18,18 +18,12 @@ public class Main {
 
         for (int idx = 0; idx < count; idx++) {
             long height = readInt();
-            if (!towers.isEmpty()) {
-                if (height < towers.peek().height()) {
-                    answer += towers.size();
+            while (!towers.empty()) {
+                if (height >= towers.peek().height()) {
+                    towers.pop();
                 } else {
-                    while (!towers.empty()) {
-                        if (height >= towers.peek().height()) {
-                            towers.pop();
-                        } else {
-                            answer += towers.size();
-                            break;
-                        }
-                    }
+                    answer += towers.size();
+                    break;
                 }
             }
             towers.add(new Tower(height));
