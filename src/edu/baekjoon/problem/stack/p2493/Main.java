@@ -20,21 +20,12 @@ public class Main {
         StringTokenizer st = new StringTokenizer(readString(), DELIMITER);
 
         for (int idx = 0; idx < count; idx++) {
-            if (towers.isEmpty()) {
-                towers.add(new Tower(readInt(st.nextToken()), idx + 1));
-                sb.append(0)
-                  .append(DELIMITER);
-                continue;
-            }
-
             int height = readInt(st.nextToken());
-            if (height > towers.peek().height()) {
-                while (!towers.isEmpty()) {
-                    if (height > towers.peek().height()) {
-                        towers.pop();
-                    } else {
-                        break;
-                    }
+            while (!towers.isEmpty()) {
+                if (height > towers.peek().height()) {
+                    towers.pop();
+                } else {
+                    break;
                 }
             }
 
