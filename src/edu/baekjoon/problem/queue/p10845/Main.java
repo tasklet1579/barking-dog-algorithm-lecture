@@ -31,8 +31,7 @@ public class Main {
         int count = readInt(readString());
 
         for (int idx = 0; idx < count; idx++) {
-            String commandLine = readString();
-            StringTokenizer st = new StringTokenizer(commandLine, DELIMITERS);
+            StringTokenizer st = new StringTokenizer(readString(), DELIMITERS);
             String command = st.nextToken();
 
             switch (command) {
