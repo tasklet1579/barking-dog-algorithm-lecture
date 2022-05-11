@@ -15,7 +15,6 @@ public class Main {
 
     private static int k;
     private static int[] numbers;
-    private static int[] visit;
     private static int[] answer;
 
     public static void main(String[] args) throws IOException {
@@ -26,7 +25,6 @@ public class Main {
                 break;
             }
             numbers = new int[k];
-            visit = new int[k];
             answer = new int[6];
             sb = new StringBuilder();
             numbers(num);
@@ -56,12 +54,8 @@ public class Main {
         }
 
         for (int idx = loc; idx < k; idx++) {
-            if (visit[idx] == 0) {
-                visit[idx] = 1;
-                answer[depth] = numbers[idx];
-                lotto(depth + 1, idx + 1);
-                visit[idx] = 0;
-            }
+            answer[depth] = numbers[idx];
+            lotto(depth + 1, idx + 1);
         }
     }
 
