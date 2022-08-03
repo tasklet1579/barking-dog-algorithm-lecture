@@ -62,3 +62,4 @@
 |백트래킹|연산자 끼워넣기|[바로 가기](src/edu/baekjoon/problem/backtracking/p9663/description.md)|[바로 가기](src/edu/baekjoon/problem/backtracking/p9663/Main.java)|
 |백트래킹|N과 M (6)|[바로 가기](src/edu/baekjoon/problem/backtracking/p15655/description.md)|[바로 가기](src/edu/baekjoon/problem/backtracking/p15655/Main.java)|
 |백트래킹|N과 M (7)|[바로 가기](src/edu/baekjoon/problem/backtracking/p15656/description.md)|[바로 가기](src/edu/baekjoon/problem/backtracking/p15656/Main.java)|
+|시뮬레이션|스타트와 링크|[바로 가기](src/edu/baekjoon/problem/simulation/p14889/description.md)|[바로 가기](src/edu/baekjoon/problem/simulation/p14889/Main.java)|
